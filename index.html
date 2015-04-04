@@ -1,0 +1,75 @@
+<%-- 
+    Document   : index
+    Created on : Apr 4, 2015, 6:10:06 AM
+    Author     : lkty
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Team5OIE2S.css">
+<title>7 Wonders Online Game</title>
+
+<script type="text/javascript">
+function show(obj) {
+no = obj.options[obj.selectedIndex].value;
+count = obj.options.length;
+for(i=1;i<count;i++)
+document.getElementById('myDiv'+i).style.display = 'none';
+if(no>0)
+document.getElementById('myDiv'+no).style.display = 'block';
+}
+</script>
+   
+<h1>Welcome to the 7 Wonders Online Game!</h1>
+<body>
+ <img src="7wonders.jpg" alt="The Game of the Gods" style="width:512px;height:256px">
+<form>
+ <select onChange="show(this)">
+ <option value="0">Select</option>
+ <option value="1">Three</option>
+ <option value="2">Four</option>
+ <option value="3">Five</option>
+ <option value="4">Six</option>
+ <option value="5">Seven</option>
+ </select>
+ </form>
+ <div id="myDiv1" style="display:none"><form action="WParse">
+ Enter name of Player 1:<input type="text" name="player1"><br>
+ Enter name of Player 2:<input type="text" name="player2"/><br>
+ Enter name of Player 3:<input type="text" name="player3"/><br>
+ <input type="submit"/></form></div>
+ <div id="myDiv2" style="display:none"><form action="WParse">
+ Enter name of Player 1:<input type="text" name="player2"><br>
+ Enter name of Player 2:<input type="text" name="player2"/><br>
+ Enter name of Player 3:<input type="text" name="player2"/><br>
+ Enter name of Player 4:<input type="text" name="player2"/><br>
+ <input type="submit"/></form></div>
+ <div id="myDiv3" style="display:none"><form action="WParse">
+ Enter name of Player 1:<input type="text" name="player2"><br>
+ Enter name of Player 2:<input type="text" name="player2"/><br>
+ Enter name of Player 3:<input type="text" name="player2"/><br>
+ Enter name of Player 4:<input type="text" name="player2"/><br>
+ Enter name of Player 5:<input type="text" name="player2"/><br>
+ <input type="submit"/></form></div>
+ <div id="myDiv4" style="display:none"><form action="WParse">
+ Enter name of Player 1:<input type="text" name="player2"><br>
+ Enter name of Player 2:<input type="text" name="player2"/><br>
+ Enter name of Player 3:<input type="text" name="player2"/><br>
+ Enter name of Player 4:<input type="text" name="player2"/><br>
+ Enter name of Player 5:<input type="text" name="player2"/><br>
+ Enter name of Player 6:<input type="text" name="player2"/><br>
+ <input type="submit"/></form></div>
+ <div id="myDiv5" style="display:none"><form action="WParse">
+ Enter name of Player 1:<input type="text" name="player2"><br>
+ Enter name of Player 2:<input type="text" name="player2"/><br>
+ Enter name of Player 3:<input type="text" name="player2"/><br>
+ Enter name of Player 4:<input type="text" name="player2"/><br>
+ Enter name of Player 5:<input type="text" name="player2"/><br>
+ Enter name of Player 6:<input type="text" name="player2"/><br>
+ Enter name of Player 7:<input type="text" name="player2"/><br>
+ <input type="submit"/></form></div>
+
+</body>
+
+</html>
